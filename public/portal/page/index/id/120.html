@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="samliu">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" href="../../../../themes/LTZ_V2.0/Public/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../../themes/LTZ_V2.0/Public/images/favicon.ico" type="image/x-icon">
+    <script src="../../../../themes/LTZ_V2.0/Public/js/jquery.min.js"></script>
+    <link href="../../../../themes/LTZ_V2.0/Public/css/default.css" rel="stylesheet">
+    <!--     <script language="Javascript">    document.oncontextmenu=new Function("event.returnValue=false"); 
+    document.onselectstart=new Function("event.returnValue=false"); 
+    </script>  -->
+    <title>下载中心 海南大宗商品交易中心国际版块 </title>
+    <meta name="keywords" content="相关下载" />
+    <meta name="description" content="相关下载">
+    <style type="text/css">
+        /* 下载页面 */
+        
+        .download {
+            width: 1200px;
+            background-color: #FFF;
+            margin: 0 auto;
+            padding: 80px 0px;
+            clear: both;
+        }
+        
+        .txt_1 {
+            font-size: 20px;
+            font-weight: bolder;
+            color: #333;
+            height: 40px;
+            line-height: 40px;
+        }
+        
+        .txt_2 {
+            font-size: 18px;
+            color: #333;
+            height: 30px;
+            line-height: 30px;
+        }
+        
+        .txt_3 {
+            font-size: 14px;
+            color: #333;
+            height: 30px;
+            line-height: 30px;
+        }
+        
+        .d_title {
+            width: 100%;
+            border-bottom: 1px solid #D3D3D3;
+            height: 40px;
+            float: left;
+            margin: 50px auto;
+        }
+        
+        .d_title .d_l {
+            width: auto;
+            height: 37px;
+            border-bottom: 3px solid #B11D23;
+            float: left;
+            font-size: 24px;
+            color: #000;
+        }
+        
+        .d_title .d_r {
+            width: 165px;
+            height: 40px;
+            float: right;
+            border-bottom: 0;
+            background: url('http://www.hncecgj.com/themes/LTZ_V2.0/Public/images/img_3.png') bottom no-repeat;
+            margin-right: 6px;
+        }
+        
+        .box_txt {
+            width: 365px;
+            height: 140px;
+            border: 1px solid #f2f2f2;
+            float: left;
+            margin-right: 49px;
+            margin-bottom: 50px;
+        }
+        
+        .box_txt:hover {
+            border: 1px solid #f4f4f4;
+            background-color: #f4f4f4;
+        }
+        
+        .box_txt .b_left {
+            float: left;
+            width: 120px;
+            height: 120px;
+            padding: 10px;
+        }
+        
+        .box_txt .b_left img {
+            width: 120px;
+            height: 120px;
+        }
+        
+        .box_txt .b_right {
+            float: right;
+            width: 215px;
+            height: 120px;
+            padding: 10px 0px;
+            position: relative;
+        }
+        
+        .box_txt .b_right dt {
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            color: #222;
+        }
+        
+        .box_txt .b_right dl {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        .box_txt .b_right .d_btn {
+            width: 100px;
+            height: 30px;
+            background: url('../../../../themes/LTZ_V2.0/Public/images/d_btn.jpg') no-repeat;
+            display: block;
+            position: absolute;
+            bottom: 10px;
+            left: 0px;
+        }
+        
+        .box_txt .b_right .d_btn:hover {
+            background: url('../../../../themes/LTZ_V2.0/Public/images/d_btn_2.jpg') no-repeat;
+        }
+        
+        .box_txt .b_right .d_btn_3 {
+            width: 100px;
+            height: 30px;
+            background: url('../../../../themes/LTZ_V2.0/Public/images/d_btn_3.jpg') no-repeat;
+            display: block;
+            position: absolute;
+            bottom: 10px;
+            left: 110px;
+        }
+        
+        .box_txt .b_right .d_btn_3:hover {
+            background: url('../../../../themes/LTZ_V2.0/Public/images/d_btn_4.jpg') no-repeat;
+        }
+        
+        .download .mask {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: #000;
+            z-index: 11;
+            opacity: 0.5;
+            display: none;
+        }
+        
+        .download .t_win {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin: -175px 0 0 -150px;
+            width: 300px;
+            height: 350px;
+            background-color: #F8B551;
+            border-radius: 5px;
+            z-index: 99;
+        }
+        
+        .download .t_win span {
+            height: 30px;
+            width: 100%;
+            display: block;
+        }
+        
+        .download .t_win span a {
+            width: 30px;
+            height: 30px;
+            float: right;
+            display: block;
+        }
+        
+        .download .t_win dt {
+            width: 80%;
+            font-size: 14px;
+            margin: 10px 0 20px 0;
+            padding: 0 10%;
+        }
+        
+        .download .t_win dl {
+            width: 100%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="top_info">
+        <ul>
+            <li>官方网址: www.hncecgj.com</li>
+            <li class="tell">24小时服务热线: 400-6868-288</dl>
+        </ul>
+    </div>
+    <div class="header">
+        <div class="menu">
+            <div class="logo">
+                <a href="../../../../index.html"><img src="../../../../themes/LTZ_V2.0/Public/images/logo.png"></a>
+            </div>
+            <ul class="nav"> <span><a class="f" href="../../../../index.html">网站首页</a></span> <span><a class="f" href="120.html###">关于我们</a> <ul class="sub-nav"> <li><a href="../../../article/index/id/130.html">公司简介</a></li> <li><a href="../../../article/index/id/167.html">股东背景</a></li> <li><a href="../../../article/index/id/168.html">企业优势</a></li> <li><a href="../../../article/index/id/133.html">人才招聘</a></li> <li><a href="../../../article/index/id/132.html">联系方式</a></li> </ul> </span> <span><a class="f" href="120.html###">业务介绍</a> <ul class="sub-nav"> <li><a href="../../../article/index/id/185.html">业务流程</a></li> <li><a href="../../../list/index/id/13.html">交易规则</a></li> <li><a href="../../../list/index/id/23.html">开户指引</a></li> <li><a href="120.html">相关下载</a></li> <li><a href="../../../list/index/id/14.html">常见问题</a></li> <li><a href="../../../list/index/id/15.html">法律法规</a></li> </ul> </span> <span><a class="f" href="120.html###">信息披露</a> <ul class="sub-nav"> <li><a href="../../../list/index/id/18.html">公告通知</a></li> <li><a href="../../../list/index/id/19.html">其它公告</a></li> <li><a href="271.html">会员信息查询</a></li> </ul> </span> <span><a class="f" href="120.html###">交易品种</a> <ul class="sub-nav"> <li><a href="../../../list/index/id/16.html">上市品种</a></li> <li><a href="../../../list/index/id/17.html">拟上市品种</a></li> </ul> </span> <span><a class="f" href="120.html###">资讯中心</a> <ul class="sub-nav"> <li><a href="../../../list/index/id/10.html">国际新闻</a></li> <li><a href="../../../list/index/id/4.html">行业新闻</a></li> <li><a href="../../../list/index/id/22.html">媒体报道</a></li> </ul> </span><span> <div style="color:#000;height:100px;width: 100px; font-size: 15px; text-align: right;line-height:100px; display:inline-block;" >服务热线：</div></span><lable style="color:red;font-size: 25px;height:100px;width: 160px; text-align: left;line-height:100px; ">400-6868-288</lable>
+                <!--     <span><a class="f" href="###">合作机构</a> <ul class="sub-nav"> <li><a href="/portal/page/index/id/121.html">会员列表</a></li> <li><a href="/portal/list/index/id/20.html">会员资讯</a></li> </ul> </span> --></ul>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $(".nav>span").hover(function() {
+                $(this).children('ul').stop(true, true).slideDown(300);
+            }, function() {
+                $(this).children('ul').stop(true, true).slideUp(1);
+            })
+        })
+
+    </script>
+    <div class="banner">
+        <div class="a_nav">
+            <ul>
+                <li class="first"><a href="120.html###">业务介绍</a></li>
+                <li><a href="../../../article/index/id/185.html">业务流程</a></li>
+                <li><a href="../../../list/index/id/13.html">交易规则</a></li>
+                <li><a href="../../../list/index/id/23.html">开户指引</a></li>
+                <li><a href="120.html">下载中心</a></li>
+                <li><a href="../../../list/index/id/14.html">常见问题</a></li>
+                <li><a href="../../../list/index/id/15.html">法律法规</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="download">
+        <!--挂牌下载开始-->
+        <div class="d_title" style="margin-top: 0px;">
+            <div class="d_l">软件下载</div>
+            <div class="d_r"></div>
+        </div>
+        <!--单个软件下载开始-->
+        <div class="box_txt">
+            <div class="b_left"><img src="../../../../themes/LTZ_V2.0/Public/images/com_2.jpg"></div>
+            <div class="b_right"> <dt>交易客户端（正式）</dt>
+                <dl>国际版块交易客户端（实盘）<br/>兼容WIN 7操作系统。</dl>
+                <a class="d_btn" target="_blank" href="../../../../data/download/khd-zs.exe"></a>
+            </div>
+        </div>
+
+        <div class="box_txt" style="margin-right: 0px;">
+            <div class="b_left"><img src="../../../../themes/LTZ_V2.0/Public/images/com_2.jpg"></div>
+            <div class="b_right"> <dt>交易客户端（模拟）</dt>
+                <dl>国际版块交易客户端（模拟）<br/>兼容WIN 7操作系统。</dl>
+                <a class="d_btn" target="_blank" href="../../../../data/download/khd-mn.exe"></a>
+            </div>
+        </div>
+        <div class="box_txt" style="margin-right: 0px;">
+            <div class="b_left"><img src="../../../../themes/LTZ_V2.0/Public/images/com_2.jpg"></div>
+            <div class="b_right"> <dt>行情分析系统</dt>
+                <dl>海南大宗商品国际版块行情分析<br/>兼容WINDOWS操作系统。</dl>
+                <a class="d_btn" target="_blank" href="../../../../data/download/gjhqfx.exe"></a>
+            </div>
+        </div>
+        <!--单个软件下载结束-->
+        <!--资料下载开始-->
+        <div class="d_title">
+            <div class="d_l">手机APP下载</div>
+            <div class="d_r"></div>
+        </div>
+        <div class="box_txt">
+            <div class="b_left"><img src="../../../../themes/LTZ_V2.0/Public/images/com_3.jpg"></div>
+            <div class="b_right"> <dt>安卓手机客户端</dt>
+                <dl>国际版块手机交易软件.<br/>兼容Android操作系统。</dl>
+                <a class="d_btn" target="_blank" href="../../../../data/download/azshouji.apk"></a>
+                <a class="d_btn_3 gp_sj" href="120.html###"></a>
+                <div class="t_win" id="gp_sj"> <span> <a class="gp_sj_close"> <img src="../../../../themes/LTZ_V2.0/Public/images/p_close.png"> </a> </span> <dt>提示：如果微信扫描，请点击微信右上角，选择用其他浏览器打开，否则无法下载！（安卓版）</dt>
+                    <dl> <img src="../../../../data/upload/hn_az_apk.png"> </dl>
+                </div>
+            </div>
+        </div>
+        <div class="box_txt" style="margin-right: 0px;">
+            <div class="b_left"><img src="../../../../themes/LTZ_V2.0/Public/images/com_3.jpg"></div>
+            <div class="b_right"> <dt>苹果手机客户端</dt>
+                <dl>国际版块手机交易软件.<br/>兼容Iphone IOS操作系统。</dl>
+                <a class="d_btn" target="_blank" href="https://itunes.apple.com/cn/app/hce-gua-pai-shi-chang/id1186152192?mt=8"></a>
+                <a class="d_btn_3 gp_sj_2" href="120.html###"></a>
+                <div class="t_win" id="gp_sj_2"> <span> <a class="gp_sj_close_2"> <img src="../../../../themes/LTZ_V2.0/Public/images/p_close.png"> </a> </span> <dt>提示：如果微信扫描，请点击微信右上角，选择用其他浏览器打开，否则无法下载！（苹果版）</dt>
+                    <dl> <img src="../../../../data/upload/iphone_gp.png"> </dl>
+                </div>
+            </div>
+        </div>
+        <!--资料下载开始-->
+        <div class="d_title">
+            <div class="d_l">相关资料下载</div>
+            <div class="d_r"></div>
+            </div>
+            <div class="box_txt">
+                <div class="b_left"><img src="../../../../themes/LTZ_V2.0/Public/images/com_2.jpg"></div>
+                <div class="b_right"> <dt>国际再生胶合约</dt>
+                    <a class="d_btn" target="_blank" href="../../../../data/download/国际再生胶合约.pdf"></a>
+                </div>
+            </div>
+            <div class="box_txt" style="margin-right: 0px;">
+                <div class="b_left"><img src="../../../../themes/LTZ_V2.0/Public/images/com_2.jpg"></div>
+                <div class="b_right"> <dt>国际银合约</dt>
+                    <a class="d_btn" target="_blank" href="../../../../data/download/国际银合约.pdf"></a>
+                </div>
+            </div>
+         <br style="clear:both;">
+        <!--发售下载结束-->
+
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $(".gp_sj").click(function() {
+                $("#gp_sj").show(500);
+            });
+            $(".gp_sj_close").click(function() {
+                $("#gp_sj").hide('fast');
+            });
+
+            $(".gp_sj_2").click(function() {
+                $("#gp_sj_2").show(500);
+            });
+            $(".gp_sj_close_2").click(function() {
+                $("#gp_sj_2").hide('fast');
+
+            });
+
+
+        });
+
+    </script>
+
+
+
+    <div class="footer">
+        <div class="f_in">
+            <div class="nav fl">
+                <ul>
+                    <li class="first"><a href="../../../../index.html">网站首页</a></li>
+                    <li><a href="../../../article/index/id/130.html">关于我们</a></li>
+                    <li><a href="../../../article/index/id/185.html">业务流程</a></li>
+                    <li><a href="120.html">相关下载</a></li>
+                    <li><a href="../../../list/index/id/18.html">公告通知</a></li>
+                    <li><a href="../../../list/index/id/14.html">常见问题</a></li>
+                    <li><a href="../../../article/index/id/132.html">联系我们</a></li><li>投诉电话：0898-68564521</li>
+                </ul>
+                <div class="bq">版权所有 © 海南大宗商品交易中心国际版块 琼ICP备16002360号-1</div>
+            </div>
+            <div class="tell fr"> <dt>24小时服务热线</dt>
+                <dl>400-6868-288</dl>
+            </div>
+        </div>
+    </div>
+    <div class="yb_conct">
+        <div class="yb_bar">
+            <ul>
+                <li class="yb_top">返回顶部</li>
+                <li class="yb_phone">400-6868-288</li>
+                
+                <li class="yb_ercode" style="height:53px;">
+                    微信订阅号 <br> <img class="hd_qr" src="../../../../themes/LTZ_V2.0/Public/images/wxkf_gp.jpg" width="125" alt="微信订阅号"> </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $(".yb_conct").stop(true);
+            $(".yb_conct").css("right", "5px");
+            $(".yb_bar .yb_ercode").css('height', '200px');
+            // 悬浮窗口
+            $(".yb_conct").hover(function() {
+                $(".yb_conct").stop(true);
+                $(".yb_conct").css("right", "5px");
+                $(".yb_bar .yb_ercode").css('height', '200px');
+            }, function() {
+                $(".yb_conct").stop(true);
+                $(".yb_conct").css("right", "-127px");
+                $(".yb_bar .yb_ercode").css('height', '53px');
+            });
+            // 返回顶部
+            $(".yb_top").click(function() {
+                $("html,body").animate({
+                    'scrollTop': '0px'
+                }, 300)
+            });
+        });
+
+    </script>
+    <div style="display:none;"> </div>
+</body>
+
+</html>

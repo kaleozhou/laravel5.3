@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="samliu">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" href="../../../../themes/LTZ_V2.0/Public/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../../themes/LTZ_V2.0/Public/images/favicon.ico" type="image/x-icon">
+    <script src="../../../../themes/LTZ_V2.0/Public/js/jquery.min.js"></script>
+    <link href="../../../../themes/LTZ_V2.0/Public/css/default.css" rel="stylesheet">
+    <!--     <script language="Javascript">    document.oncontextmenu=new Function("event.returnValue=false"); 
+    document.onselectstart=new Function("event.returnValue=false"); 
+    </script>  -->
+    <title>视频展示 海南大宗商品交易中心国际版块 </title>
+    <meta name="keywords" content="视频展示" />
+    <meta name="description" content="视频展示">
+    <style type="text/css">
+        html {
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        
+        body {
+            background-color: #000;
+        }
+        
+        .v_video {
+            width: 800px;
+            height: 470px;
+            position: absolute;
+            top: 50%;
+            margin-top: -235px;
+            left: 50%;
+            margin-left: -400px;
+            border: 10px solid #000;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px #333;
+        }
+        
+        .bg {
+            overflow: hidden;
+        }
+        
+        .btn {
+            display: block;
+            margin: 0 auto;
+            padding: 15px;
+            50px;
+            background-color: #FFF;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        
+        .btn:hover {
+            background-color: red;
+            color: #FFF;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="bg"> <img class="tupian" src="../../../../themes/LTZ_V2.0/Public/images/video_bg4.jpg" />
+        <div class="v_video"> <embed wmode="direct" flashvars="vid=u0329azo6xv&amp;tpid=0&amp;showend=1&amp;showcfg=1&amp;searchbar=1&amp;skin=http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf&amp;shownext=1&amp;list=2&amp;autoplay=0&amp;forcestream=0" src="http://imgcache.qq.com/tencentvideo_v1/player/TPout.swf?max_age=86400&amp;v=20140714" quality="high" name="tenvideo_flash_player_1446736096926" id="tenvideo_flash_player_1446736096926" bgcolor="#000000" width="800px" height="470px" align="middle" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/cn/flashplayer/"> </div> <a class="btn" href="../../../../index.html">返回首页</a> </div>
+    <script type="text/javascript">
+        //var ss = document.body.scrollHeight;
+        var ss = $("body").height();
+        var bw = $("body").width();
+        $(".bg").css({
+            height: ss,
+            width: bw,
+            display: "block"
+        });
+        $(".tupian").css({
+            width: bw,
+            display: "block"
+        });
+
+    </script>
+</body>
+
+</html>
