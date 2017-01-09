@@ -9,5 +9,34 @@
     php artisan make:auth --views
 ##创建数据表
     php artisan make:migration create_users_table --create=users  
+##创建模型
+    php artisan make:model Models/Article
+##创建控制器
+    php artisan make:controller PhotoController
+##编写填充器
+    php artisan make:seeder UserTableSeeder
+##定义关联
+    namespace App\Models;
 
+    use Illuminate\Database\Eloquent\Model;
 
+    class Article extends Model
+    {
+    //
+    public function Sort(){
+                return $this->belongsTo('App\Models\Sort');
+                    
+    }
+
+    }
+    namespace App\Models;
+    
+    use Illuminate\Database\Eloquent\Model;
+    
+    class Sort extends Model
+    {
+        //
+        public function Article(){
+            return $this->hasMany('App\Models\Article');
+        }
+    }

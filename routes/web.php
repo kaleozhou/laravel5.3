@@ -17,6 +17,7 @@ Route::get('/', function () {
 Route::get('/index', function () {
     return view('index');
 });
+Route::get('/art/{article_id?}', 'ArticleController@index');
 
 Auth::routes();
 

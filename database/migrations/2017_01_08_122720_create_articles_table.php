@@ -25,8 +25,8 @@ class CreateArticlesTable extends Migration
             $table->string('intro')->nullable();
             //内容
             $table->text('content');
-            $table->string('author');
-            $table->string('copyfrom');
+            $table->string('author')->nullable();
+            $table->string('copyfrom')->nullable();
             //关键字
             $table->string('keyword')->nullable();
             $table->integer('hits')->nullable();
