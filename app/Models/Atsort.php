@@ -4,10 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Sort extends Model
+class Atsort extends Model
 {
-    //
-    public function articles(){
+     public function articles(){
         return $this->hasMany('App\Models\Article');
     }
 }

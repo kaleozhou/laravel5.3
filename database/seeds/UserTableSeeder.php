@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class SortTableSeeder extends Seeder
+class UserTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,9 +12,5 @@ class SortTableSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('sorts')->insert([
-            'name' => str_random(10),
-            'parent_id' => rand(1,10),
-        ]);
     }
 }

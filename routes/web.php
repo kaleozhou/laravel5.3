@@ -18,6 +18,7 @@ Route::get('/index', function () {
     return view('index');
 });
 Route::get('/art/{article_id?}', 'ArticleController@index');
+Route::get('/artlist/{atsort_id?}', 'ArticleController@articlelist');
 
 Auth::routes();
 

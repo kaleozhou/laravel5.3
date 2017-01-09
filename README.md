@@ -40,3 +40,9 @@
             return $this->hasMany('App\Models\Article');
         }
     }
+##删除迁移文件
+    -先回滚或者重置
+    php artisan migrate:reset
+    -删除迁移文件
+    -执行
+    composer dump-autoload

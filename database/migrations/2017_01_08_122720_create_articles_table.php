@@ -15,7 +15,7 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('sort_id')->default(1);
+            $table->integer('atsort_id')->default(1);
             $table->string('title');
             $table->string('title_color')->nullable();
             $table->string('full_title')->nullable();
