@@ -1,4 +1,4 @@
-@extends('layouts.articlelist')
+@extends('layouts.app')
 @section('banner')
 <div class="banner">
     <div class="a_nav">
@@ -12,6 +12,7 @@
 </div>
 @endsection
 @section('content')
+   <div class="list">
     <div class="l_title">{{$atsort->name}}</div>
     <hr width="800px" size="1" color="#999" style="margin: 0px;" />
     <div class="left fl">
