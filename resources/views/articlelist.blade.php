@@ -18,7 +18,14 @@
     <div class="left fl">
         <div class="l_in">
             @foreach($articles as $article)
-            <a href="/art/{{$article->id}}"> <span class="title"></span> <span class="info">{{$article->title}}</span> <span class="other"> <dt class="time">{{$article->created_at}}</dt> <dl class="more">查看详情 ></dl> </span> </a>
+            <a href="/art/{{$article->id}}">
+                <span class="title">{{$article->title}}</span>
+                <span class="info">{{$article->subhead}}</span>
+                <span class="other">
+                    <dt class="time">{{$article->created_at}}</dt>
+                    <dl class="more">查看详情 ></dl>
+                </span>
+            </a>
             @endforeach
         </div>
         <div class="l_num">
