@@ -11,13 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/index', function () {
-    return view('index');
-});
-Route::get('/art/{article_id?}', 'ArticleController@index');
+Route::get('/', 'ArticleController@index');
+Route::get('/index', 'ArticleController@index');
+Route::get('/art/{article_id?}', 'ArticleController@articledetail');
 Route::get('/artlist/{atsort_id?}', 'ArticleController@articlelist');
 
 Auth::routes();

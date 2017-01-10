@@ -79,7 +79,7 @@ window.Laravel = <?php echo json_encode([ 'csrfToken' => csrf_token(),]); ?>
     <div class="header">
         <div class="menu">
             <div class="logo">
-                <a href="index.html"><img src="/images/logo.png"></a>
+                <a href="/"><img src="/images/logo.png"></a>
             </div>
             <ul class="nav"> 
                 <span><a class="f" href="/">网站首页</a></span> 
@@ -107,34 +107,6 @@ $(function() {
 </script>
 @yield('banner')
 @yield('content')
-<!-- 右边 -->
-<div class="right">
-    <div class="r_ad"></div>
-    <div class="r_list">
-        <p>资讯中心&nbsp<small>News Center</small></p>
-        <ul>
-            <li><a href="../../../portal/article/index/id/291.html" title="手机交易软件(IOS版)火爆上线！" target="_blank">手机交易软件(IOS版)火爆上线！</a><small>[12-20]</small></li>
-            <li><a href="../../../portal/article/index/id/290.html" title="德国欲在亚投行高调行事 协调欧洲对接&quot;一带一路&quot;" target="_blank">德国欲在亚投行高调行事 协调欧洲对接&quot;一带一路&quot;</a><small>[12-20]</small></li>
-            <li><a href="../../../portal/article/index/id/289.html" title="手机交易软件(Android版)震撼上线！" target="_blank">手机交易软件(Android版)震撼上线！</a><small>[12-19]</small></li>
-            <li><a href="../../../portal/article/index/id/288.html" title="沉着应对美联储加息" target="_blank">沉着应对美联储加息</a><small>[12-19]</small></li>
-            <li><a href="../../../portal/article/index/id/287.html" title="热烈祝贺国际版块迎来0017号经纪会员" target="_blank">热烈祝贺国际版块迎来0017号经纪会员</a><small>[12-16]</small></li>
-            <li><a href="../../../portal/article/index/id/286.html" title="热烈祝贺0009号经纪会员正式入驻国际版块" target="_blank">热烈祝贺0009号经纪会员正式入驻国际版块</a><small>[12-16]</small></li>
-            <li><a href="../../../portal/article/index/id/285.html" title="全球经济在不确定性中前行" target="_blank">全球经济在不确定性中前行</a><small>[12-16]</small></li>
-            <li><a href="../../../portal/article/index/id/284.html" title="欧洲央行“一加一减”为哪般" target="_blank">欧洲央行“一加一减”为哪般</a><small>[12-15]</small></li>
-            <li><a href="../../../portal/article/index/id/283.html" title="热烈祝贺国际版块0022号经纪会员成功激活" target="_blank">热烈祝贺国际版块0022号经纪会员成功激活</a><small>[12-14]</small></li>
-            <li><a href="../../../portal/article/index/id/282.html" title="行情分析系统正式上线" target="_blank">行情分析系统正式上线</a><small>[12-14]</small></li>
-            <li><a href="../../../portal/article/index/id/281.html" title="橡胶铁矿石等多个品种价格再创新高" target="_blank">橡胶铁矿石等多个品种价格再创新高</a><small>[12-14]</small></li>
-            <li><a href="../../../portal/article/index/id/280.html" title="2016年经济发展回眸：供给侧，改革攻坚见实效" target="_blank">2016年经济发展回眸：供给侧，改革攻坚见实效</a><small>[12-13]</small></li>
-        </ul>
-        <div class="clearfix"></div>
-    </div>
-</div>
-<!-- end 右边 -->
-<div class="clearfix"></div>
-</div>
-<!-- 公司链接 -->
-
-
 <div class="footer">
     <div class="f_in">
         <div class="nav fl">
@@ -161,7 +133,7 @@ $(function() {
             <li class="yb_top">返回顶部</li>
             <li class="yb_phone">400-6868-288</li>
             <li class="yb_ercode" style="height:53px;">
-                微信订阅号 <br> <img class="hd_qr" src="../../../../themes/LTZ_V2.0/Public/images/wxkf_gp.jpg" width="125" alt="微信订阅号"> </li>
+                微信订阅号 <br> <img class="hd_qr" src="/images/wxkf_gp.jpg" width="125" alt="微信订阅号"> </li>
         </ul>
     </div>
 </div>
