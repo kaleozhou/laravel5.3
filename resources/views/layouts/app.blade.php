@@ -161,5 +161,6 @@ $(function() {
 });
 </script>
 <div style="display:none;"> </div>
+<script src='/js/app.js'></script>
 </body>
 </html>

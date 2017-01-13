@@ -18,7 +18,7 @@ class ArticleController extends Controller
         foreach ($atsort01s as $atsort01) {
             $this->atsortdata[$atsort01->name]=Atsort::where('parent_id',$atsort01->id)->get();
         }
-        $this->nolist=array(6,7,8,9,10,11,12);
+        $this->nolist=array(6,7,8,9,10,11,12,13,18);
         $this->norightlist=array(13,18);
     }
 

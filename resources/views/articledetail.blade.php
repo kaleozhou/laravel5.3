@@ -9,18 +9,19 @@
             @endforeach
         </ul>
     </div>
+<vue-html5-editor :content="content" :height="500"></vue-html5-editor>
 </div>
 @endsection
 @section('content')
-@if(in_array($article->atsort_id,$norightlist))
+@if (in_array($article->atsort_id,$norightlist))
 {!!$article->content!!}
-@esle
+@else
 <div class="detail">
     <!-- 左边 -->
     <!-- end 左边 -->
     <div class="left">
         <div class="news">
-            @if(in_array($article->atsort_id,$nolist))
+            @if (in_array($article->atsort_id,$nolist))
             <div style="font-size: 22px; width: 90px; line-height: 50px; height: 50px; border-bottom: 2px solid #971E23; ">{{$article->title}}</div>
             <hr width="100%" size="1" color="#999" style="margin: 0px;">
             {!!$article->content!!}        

@@ -18,3 +18,5 @@ Vue.component('example', require('./components/Example.vue'));
 const app = new Vue({
     el: '#app'
 });
+var editor = require('vue-html5-editor');
+Vue.use(editor);
